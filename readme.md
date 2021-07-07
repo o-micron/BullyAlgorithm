@@ -1,5 +1,24 @@
 ## Bully Algorithm
-An attempt to implement the bully algorithm in 3 days
+An attempt to implement the bully algorithm in 3 days.
+check [https://en.wikipedia.org/wiki/Bully_algorithm](https://en.wikipedia.org/wiki/Bully_algorithm) for more details.
+
+## Introduction
+```
+The bully algorithm simulation is in 2 parts.
+
+1) The routing server
+The first part is a routing server which is responsible for letting new nodes know the other nodes in the network.
+The routing server is basically the table that stores all nodes in the network.
+If a new node wants to enter the network it has to first ask the routing server where are the other nodes.
+Once the new node gets the info needed (ip, port, uuid) of the other nodes in the network it starts running it's core logic.
+Run the routing server application before running the node application !
+
+
+2) The node application
+The node application has the logic needed to be executed by each node in the network.
+The node calls for re-election in case the coordinator has dropped or in case it hasn't pinged during a timeout range.
+Run the node application to create new node in the network but make sure the routing server is running first !
+```
 
 ## Run the application
 | Executable | Args | Description |
