@@ -1,4 +1,5 @@
 ## Bully Algorithm
+An attempt to implement the bully algorithm in 3 days
 
 ## Run the application
 | Executable | Args | Description |
