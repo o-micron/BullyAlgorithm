@@ -27,8 +27,15 @@ Run the node application to create new node in the network but make sure the rou
 | BullyAlgoNode.exe | `port number` | `spawns a new node` |
 ```
 Steps:
-    1. Double-click `run.cmd` to create a routing server
-    2. Double-click `connect.cmd` to spawn nodes
+    - Compile
+        1. cd BullyAlgorithm
+        2. mkdir build
+        3. cd build
+        4. cmake ..
+        5. cmake --build . --config Debug
+    - Run
+        1. Double-click `run.cmd` to create a routing server
+        2. Double-click `connect.cmd` to spawn nodes
 ```
 
 ## Simulation
